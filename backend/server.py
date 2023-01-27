@@ -23,8 +23,8 @@ import warnings; warnings.simplefilter('ignore')
 
 #Creating a "master" csv file which matches up movies you have watched, to movies in the dataset.
 #df1 is what we call "small-data"
-df1=pd.read_csv('/Users/aviwalia/Documents/CineMatch_Avi/backend/NetflixViewingHistory.csv', encoding= 'unicode_escape')
-df2=pd.read_csv('/Users/aviwalia/Documents/CineMatch_Avi/backend/movies.csv', encoding= 'unicode_escape')
+df1=pd.read_csv('/Users/aviwalia/Documents/CineMatch/backend/NetflixViewingHistory.csv', encoding= 'unicode_escape')
+df2=pd.read_csv('/Users/aviwalia/Documents/CineMatch/backend/movies.csv', encoding= 'unicode_escape')
 df_final=pd.merge(df1,df2,on=['title'])
 df_final.to_csv('final.csv',columns=['budget', 'genres', 'id', 'keywords', 'overview', 'production_companies', 'runtime', 'tagline', 'title', 'vote_average', 'vote_count'])
 df_final = pd.read_csv('final.csv')

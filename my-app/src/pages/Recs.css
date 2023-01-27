@@ -36,9 +36,58 @@
     touch-action: manipulation;
   }
 
+  .button-2{
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
 .text{
     color: white;
-    font-size: 30px;
+    font-size: 55px;
     line-height-step: 50px;
     padding-left: 70px;
+    height: 30;
+    width: 500px;
+}
+
+.carousel .item{
+  height: 100px;
+  width: 100px;
+}
+
+.item img {
+  position: absolute;
+  object-fit:cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.button-1{
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: 50px;
+  
 }

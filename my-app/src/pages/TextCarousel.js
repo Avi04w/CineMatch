@@ -6,16 +6,16 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 export default function TextCarousel() {
 
     const [data, setdata] = useState({
-        movie1: "",
-        movie2: "",
-        movie3: "",
-        movie4: "",
-        movie5: "",
-        movie6: "",
-        movie7: "",
-        movie8: "",
-        movie9: "",
-        movie10: "",
+        movie1: "Straight Outta Compton",
+        movie2: "The Equalizer",
+        movie3: "Batman Begins",
+        movie4: "GoodFellas",
+        movie5: "Training Day",
+        movie6: "Django Unchained",
+        movie7: "The Bourne Ultimatum",
+        movie8: "Interstellar",
+        movie9: "The Wolf of Wall Street",
+        movie10: "The Iceman",
     });
 
     // const apiCall = async () => {
@@ -63,21 +63,21 @@ export default function TextCarousel() {
     return (
     <div class='text'>
       <CarouselProvider
-        naturalSlideWidth={100}
-        naturalSlideHeight={125}
+        naturalSlideWidth={300}
+        naturalSlideHeight={300}
         totalSlides={10}
       >
         <Slider>
-          <Slide index={0}><p>movie1 and a lot of text as place holders</p></Slide>
-          <Slide index={1}><p>{data.movie1}</p></Slide>
-          <Slide index={2}><p>movie3</p></Slide>
-          <Slide index={3}><p>movie4</p></Slide>
-          <Slide index={4}><p>movie5</p></Slide>
-          <Slide index={5}><p>movie6</p></Slide>
-          <Slide index={6}><p>movie7</p></Slide>
-          <Slide index={7}><p>movie8</p></Slide>
-          <Slide index={8}><p>movie9</p></Slide>
-          <Slide index={9}><p>movie10</p></Slide>
+          <Slide index={0}><p>{data.movie1}</p></Slide>
+          <Slide index={1}><p>{data.movie2}</p></Slide>
+          <Slide index={2}><p>{data.movie3}</p></Slide>
+          <Slide index={3}><p>{data.movie4}</p></Slide>
+          <Slide index={4}><p>{data.movie5}</p></Slide>
+          <Slide index={5}><p>{data.movie6}</p></Slide>
+          <Slide index={6}><p>{data.movie7}</p></Slide>
+          <Slide index={7}><p>{data.movie8}</p></Slide>
+          <Slide index={8}><p>{data.movie9}</p></Slide>
+          <Slide index={9}><p>{data.movie10}</p></Slide>
         </Slider>
 
         <ButtonBack className="button-1">Back</ButtonBack>
