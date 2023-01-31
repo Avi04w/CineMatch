@@ -6,16 +6,16 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 export default function TextCarousel() {
 
     const [data, setdata] = useState({
-        movie1: "Straight Outta Compton",
-        movie2: "The Equalizer",
-        movie3: "Batman Begins",
-        movie4: "GoodFellas",
-        movie5: "Training Day",
-        movie6: "Django Unchained",
-        movie7: "The Bourne Ultimatum",
-        movie8: "Interstellar",
-        movie9: "The Wolf of Wall Street",
-        movie10: "The Iceman",
+        movie1: "Batman Begins",
+        movie2: "The Bourne Ultimatum",
+        movie3: "The Dark Knight Rises",
+        movie4: "Man of Steel",
+        movie5: "Suicide Squad",
+        movie6: "Watchmen",
+        movie7: "Interstellar",
+        movie8: "The Equalizer",
+        movie9: "L.A. Confidential",
+        movie10: "Straight Outta Compton",
     });
 
     // const apiCall = async () => {
